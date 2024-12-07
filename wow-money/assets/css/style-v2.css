@@ -27,7 +27,7 @@ body {
 }
 
 .hero-section{
-  background: url(../images/hero.jpg) 0 0 no-repeat;
+  background: url(../images/job493-ploy-holographic-08.jpg) center center no-repeat;
   background-size: cover;
   position: relative;
   /* height: calc(100vh); */
@@ -38,9 +38,9 @@ body {
 }
 
 .hero-bg{
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   border-radius: 20px;
-  padding: 1rem 3rem;
+  padding: 2rem 3rem;
   margin: 1rem auto;
 }
 
@@ -49,17 +49,28 @@ body {
   padding: 15px 45px;
   border-radius: 10px;
   font-size: 21px;
-  background-color: #d51e23;
+  background-color: #171ab3;
   color: #fff;
   font-weight: 400;
   transition: all 0.3s ease 0s;
-  box-shadow: #d51e23 0 10px 20px -10px;
+  box-shadow: #171ab3 0 10px 20px -10px;
   text-align: center;
   text-shadow: 0 1px 0 rgba(0,0,0,0.5);
 }
 
 .call-to-btn:hover {
-  box-shadow: 0 0 20px #d51e23;
+  box-shadow: 0 0 20px #171ab3;
+  color: #fff;
+}
+
+.call-to-btn.white{
+  color: #171ab3;
+  background-color: #fff;
+}
+
+.call-to-btn.white:hover{
+  color: #171ab3;
+  background-color: #fff;
 }
 
 .hero-h2 {
@@ -114,12 +125,12 @@ body {
 .hero-h1 label {
   /* text-decoration: underline; */
   font-weight: bold;
-  color: #d51e23;
+  color: #171ab3;
   display: inline;
 }
 
 .hero-top{
-  background-color: #171ab3;
+  background-color: #212529;
   text-align: center;
   color: #fff;
   width: auto;
@@ -158,7 +169,7 @@ body {
   /* border-radius: 10px;
   padding: 7px 15px; */
   width: 100%;
-  margin: 15px 0 5px;
+  margin: 20px 0 10px;
   /* background-color: #fff; */
 }
 
@@ -291,7 +302,7 @@ a:focus {
   height: 75px; */
   bottom: 0;
   left: -2%;
-  background-color: #171ab3;
+  background-color: #212529;
   padding: 15px 25px;
   color: #fff;
   border-radius: 20px 0;
@@ -396,7 +407,7 @@ a:focus {
 
 .hero-detail-box p {
   margin-top: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 /* end hero section */
@@ -404,6 +415,7 @@ a:focus {
 /* common style for some sections */
 .common-style > section {
   padding: 80px 0;
+  position: relative;
 }
 
 .common-style .row {
@@ -430,7 +442,7 @@ a:focus {
 /* about section */
 .about-section {
   /* background: url(../images/intro-bg.png) no-repeat center center #171ab3; */
-  background-color: #171ab3;
+  background-color: #eee;
   background-size: cover;
   background-attachment: scroll;
   /* background-color: ; */
@@ -443,28 +455,31 @@ a:focus {
 .challenges-ul {
   padding: 0;
   margin: 1rem 0 0;
-text-align: center;
+/* text-align: center; */
 }
 
 .challenges-ul li {
   color: #000;
   display: inline flow-root list-item;
-  font-size: 16px;
+  font-size: 1.1rem;
   padding: 15px;
   margin: 0 10px 10px 0;
   list-style: decimal inside;
   /* background-color: rgba(0, 0, 0, 0.8); */
   background-color: #eee;
   border-radius: 10px;
+  width: 48%;
+  vertical-align: top;
 }
 
-.about-h5{
+.about-h6{
   line-height: 2rem;
+  font-size: 1.1rem;
   position: relative;
-  /* padding: 0 0 0 3rem; */
+  padding: 0 0 0 3rem;
 }
 
-.about-h5 i{
+.about-h6 i{
   position: absolute;
   left: 0;
   top: 8px;
@@ -498,10 +513,13 @@ text-align: center;
     position: relative;
     /* padding: 0 0 0 30px; */
     font-weight: 400;
+    font-size: 1.1rem;
   }
 
 .about-detail-box .title-h5 {
-  font-weight: 600;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .title-h5 b {
@@ -522,7 +540,7 @@ text-align: center;
 .text-yellow,
 .title-h5 b,
 .title-h5 i {
-  color: #171ab3;
+  color: #000;
 }
 
 /* .about-section a {
@@ -577,8 +595,8 @@ text-align: center;
 /* why section */
 
 .know-more {
-  background-color: #171ab3;
-  color: #fff;
+  background-color: #ebebeb;
+  /* color: #fff; */
 }
 
 /* end why section */
@@ -1069,7 +1087,7 @@ i.fa.fa-chevron-down {
   }
 
   .hero-bg{
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
 
   .common-style h3{
@@ -1739,4 +1757,72 @@ html {
 .btn-success i {
   position: absolute;
   left: 10px;
+}
+
+
+/******* bottom fix ******/
+
+.bottom-fix{
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 0.8rem 0 0.4rem;
+  background-color: #ebebeb;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.free-bottom{
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.bottom-fix .call-to-btn{
+  padding: 10px 25px;
+}
+.pos-rel{position:relative;}
+.ben-box{
+    position: absolute;
+left: 50%;
+top: -20px;
+padding: 7px 40px;
+background-color: #D91656;
+color: #fff;
+border-radius: 5px;
+margin-left: -80px;
+font-size: 1.3rem;
+}
+.counter{
+  font-size: 1.2rem;
+  color: #171ab3;
+  font-weight: 600;
+  display: flex;
+}
+.counter > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 10px 0 0;
+}
+.day-char{
+  font-weight: 400;
+  color: #000;
+  font-size: 0.7rem;
+}
+
+.why-img-container{
+  position: absolute;
+  top: -223px;
+  left: 0;
+}
+
+.why-img-container img{
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  .why-img-container{
+    position: relative;
+  }
 }
